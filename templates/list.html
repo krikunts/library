@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <table class="table table-striped {% block table_class %}{% endblock %}">
+        <tbody>
+        {% for item in object_list %}
+            {% block list_item %}
+                <tr>
+                    <td>
+                        {{ item }}
+                    </td>
+                </tr>
+            {% endblock %}
+        {% endfor %}
+        </tbody>
+    </table>
+    {% include 'pagination.html' %}
+{% endblock %}

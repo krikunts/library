@@ -1,0 +1,9 @@
+{% extends 'list.html' %}
+
+{% block list_item %}
+    <tr>
+        <td>
+            <a href="{% url 'shelf_books' pk=item.pk %}">{{ item }}</a>
+        </td>
+    </tr>
+{% endblock %}

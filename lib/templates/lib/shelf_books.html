@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link href="{% static 'css/sortable.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block js %}
+    <script src="https://johnny.github.io/jquery-sortable/js/jquery-sortable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="{% static 'js/utils.js' %}"></script>
+    <script src="{% static 'js/shelf-books-sortable.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+    <ul class="list-group sortable">
+        {% for item in object_list %}
+            <li class="list-group-item" data-book="{{ item.book_id }}">
+                {{ item.book }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

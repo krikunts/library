@@ -1,0 +1,222 @@
+[
+    {
+        "model": "lib.author",
+        "pk": 1,
+        "fields": {
+            "first_name": "Александр",
+            "last_name": "Пушкин"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 2,
+        "fields": {
+            "first_name": "Лев",
+            "last_name": "Толстой"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 3,
+        "fields": {
+            "first_name": "Айзек",
+            "last_name": "Азимов"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 4,
+        "fields": {
+            "first_name": "Роберт",
+            "last_name": "Шекли"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 5,
+        "fields": {
+            "first_name": "Аркадий",
+            "last_name": "Стругацкий"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 6,
+        "fields": {
+            "first_name": "Борис",
+            "last_name": "Стругацкий"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 7,
+        "fields": {
+            "first_name": "Нил",
+            "last_name": "Гейман"
+        }
+    },
+    {
+        "model": "lib.author",
+        "pk": 8,
+        "fields": {
+            "first_name": "Терри",
+            "last_name": "Пратчетт"
+        }
+    },
+    {
+        "model": "lib.bookshelf",
+        "pk": 1,
+        "fields": {
+            "code": "Русская классика"
+        }
+    },
+    {
+        "model": "lib.bookshelf",
+        "pk": 2,
+        "fields": {
+            "code": "Русская фантастика"
+        }
+    },
+    {
+        "model": "lib.bookshelf",
+        "pk": 3,
+        "fields": {
+            "code": "Зарубежная фантастика"
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 1,
+        "fields": {
+            "title": "Капитанская дочка",
+            "authors": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 2,
+        "fields": {
+            "title": "Война и мир",
+            "authors": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 3,
+        "fields": {
+            "title": "Трудно быть богом",
+            "authors": [
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 4,
+        "fields": {
+            "title": "Благие знамения",
+            "authors": [
+                7,
+                8
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 5,
+        "fields": {
+            "title": "Стража! Стража!",
+            "authors": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 6,
+        "fields": {
+            "title": "Кое-что задаром",
+            "authors": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "lib.book",
+        "pk": 7,
+        "fields": {
+            "title": "Я, робот",
+            "authors": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 1,
+        "fields": {
+            "book": 3,
+            "shelf": 2,
+            "place": 1
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 2,
+        "fields": {
+            "book": 2,
+            "shelf": 1,
+            "place": 1
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 3,
+        "fields": {
+            "book": 1,
+            "shelf": 1,
+            "place": 2
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 4,
+        "fields": {
+            "book": 4,
+            "shelf": 3,
+            "place": 1
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 5,
+        "fields": {
+            "book": 5,
+            "shelf": 3,
+            "place": 2
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 6,
+        "fields": {
+            "book": 6,
+            "shelf": 3,
+            "place": 3
+        }
+    },
+    {
+        "model": "lib.bookplace",
+        "pk": 7,
+        "fields": {
+            "book": 7,
+            "shelf": 3,
+            "place": 4
+        }
+    }
+]
